@@ -7,14 +7,18 @@
 #include <string>
 
 class Book {
-    private:
+private:
     std::string tilte;
     std::string author;
     std::string isbn;
     bool isAvailable;
-    public:
+public:
     Book(std::string tilte, std::string author, std::string isbn, bool isAvailable);
 
+    std::string getTilte() const;
+    std::string getAuthor() const;
+    std::string getIsbn() const;
+    bool getIsAvailable() const;
 
 };
 #endif //BOOK_H
